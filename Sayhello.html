@@ -1,21 +1,8 @@
 <!DOCTYPE html>
-  <title>Conceição</title>
-  <meta charset="UTF-8">
-  
-<html>
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 <style>
-
-  body {
-    background-color: black;
-  }
-
   .red-text {
     color: red;
-  }
-
-  .blue-text {
-    color: yellow;
   }
 
   h2 {
@@ -28,7 +15,7 @@
   }
 
   .thick-green-border {
-    border-color: yellow;
+    border-color: green;
     border-width: 10px;
     border-style: solid;
     border-radius: 50%;
@@ -39,13 +26,8 @@
   }
 
   .silver-background {
-    background-color: blue;
+    background-color: silver;
   }
-
-  [type='checkbox'] {
-    margin: 10px 0px 15px 0px;
-  }
-
 </style>
 
 <h2 class="red-text">CatPhotoApp</h2>
@@ -54,32 +36,31 @@
 
   <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
 
-  <div class="silver-background blue-text">
+  <div class="silver-background">
     <p>Things cats love:</p>
-    <ol>
+    <ul>
       <li>cat nip</li>
       <li>laser pointers</li>
       <li>lasagna</li>
-    </ol>
+    </ul>
     <p>Top 3 things cats hate:</p>
-    <ul>
+    <ol>
       <li>flea treatment</li>
       <li>thunder</li>
       <li>other cats</li>
-    </ul>
+    </ol>
   </div>
 
-  <form action="https://freecatphotoapp.com/submit-cat-photo" id="cat-photo-form">
-    <label class="red-text"><input type="radio" name="indoor-outdoor" checked> Indoor</label>
-    <label class="red-text"><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
-    <label class="red-text"><input type="checkbox" name="personality" checked> Loving</label>
-    <label class="red-text"><input type="checkbox" name="personality"> Lazy</label>
-    <label class="red-text"><input type="checkbox" name="personality"> Energetic</label><br>
+  <form id="cat-photo-form" action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
+    <label><input type="checkbox" name="personality" checked> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Energetic</label><br>
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
   </form>
 </main>
-</html>
 
 <!--<style>
   .injected-text {
